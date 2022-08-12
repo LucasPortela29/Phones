@@ -1,0 +1,12 @@
+#sobre{
+    font-size: 1.7em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+
+#sobre {
+    font-size: 1.2em;
+}
+
+}

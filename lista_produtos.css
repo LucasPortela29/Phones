@@ -1,0 +1,108 @@
+#produtos {
+    display: grid;
+	justify-content: space-between;
+    color: #423f61;
+    grid-template-columns: 24% 24% 24% 24%;
+}
+
+.produto {
+    border-radius: 30px;
+    background-color: #d6d1ff;
+    overflow: hidden;
+    transition: 300ms;
+    margin-bottom: 15px;
+}
+
+#produto-preco {
+    font-weight: bolder;
+    font-size: 1.7em;
+    padding-left: 15px;
+    line-height: 0em;
+}
+
+.produto img {
+    max-width: 100%;
+    box-shadow: 0 -30px 50px black;
+}
+
+@media only screen and (max-width: 1098px){
+
+
+
+}
+
+.hover-categorias, .hover-destaque, #promo {
+    transition: 300ms;
+}
+
+.hover-categorias:hover {
+    transition: 300ms;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(40,0,100,.8);
+}
+
+.hover-destaque:hover {
+    cursor: pointer;
+}
+
+.hover-destaque:hover {
+    transform: scale(1.05);
+    filter: contrast(1.08)
+}
+
+.produto:hover>img{
+    transition: 300ms;
+    transform: scale(1.05);
+    filter: contrast(1.08);
+    box-shadow: 0 -20px 50px black;
+}
+
+.produto:hover{
+    cursor: pointer;
+}
+
+#promo:hover {
+    cursor: pointer;
+    filter: contrast(1.08) saturate(1.2);
+}
+
+#voltar {
+    border: 4px solid #c7c0ff;
+    color: #3c3958;
+    font-size: 1.1em;
+    font-weight: bolder;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-family: "JetBrainsMono";
+    background-color: #c7c0ff;
+    transition: 300ms;
+    margin: 0px;
+}
+
+#voltar:hover{
+    cursor: pointer;
+    border: 4px solid #3c3958;
+}
+
+#nome_categoria {
+    font-weight:bolder;
+    text-align: center;
+    font-size: 3em;
+}
+
+@media only screen and (max-width: 600px){
+
+#voltar {
+    margin-top: 100px;
+}
+
+#produtos {
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 15px;
+}
+
+.produto{
+    border-radius: 20px;
+}
+
+}
