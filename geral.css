@@ -16,6 +16,7 @@ body {
     margin:0;
     box-sizing: border-box;
     background-color: #6d68a1;
+    marg
 }
 
 ::selection {
@@ -26,9 +27,13 @@ body {
     padding: 25px;
     margin: 0 auto;
     width: 1100px;
+    padding-top: 100px;
 }
 
 header {
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
     height: 60px;
     background-color: #9892e0;
     color: #5d5891;
